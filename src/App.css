@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.portfolio-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: #777;
+}
+
+.filter-btn.active {
+  background-color: #444;
+  color: #fff;
+  border-color: #444;
+}
+
+.project-list {
+  column-count: 3;
+  column-gap: 15px;
+}
+
+.project-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
+
+.project-item img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .project-list {
+    column-count: 2;
+  }
+}
